@@ -78,8 +78,7 @@ function sell() {
                 var remainingQty = availableQty - answer.quantity;
                 var total = answer.quantity * results[0].price;
                 updateStockAndSale(answer.item_id, remainingQty, total);
-                updateDepartmentSale(results[0].department_name, total);
-                console.log("Your Total is:" + total + "$");
+                 console.log("Your Total is:" + total + "$");
 
             } else {
                 console.log("Sorry, Insufficient quantity");
@@ -94,31 +93,11 @@ function sell() {
 
 }
 
-//
-// create table departments(
-//  department_id int(10) auto_increment not null,
-//  department_name varchar(50),
-//  over_head_costs int(100),
-//  total_sales integer(100),
-//  primary key(department_id)
-// )
-function updateDepartmentSale(department_name, total) {
-    console.log(department_name);
-    connection.query('UPDATE departments SET  total_sales = total_sales + ? WHERE department_name = ? ', [
-         total, department_name
-    ], function(err, results, fields) {
-        if (err) {
-            throw err;
-        } else {
-            console.log("Updated department sale");
-        }
-    });
 
-}
 
-function updateStockAndSale(item_id, remainingQty, total) {
-    connection.query('UPDATE products SET stock_quantity = ? , products_sale = products_sale + ? WHERE item_id = ? ', [
-        remainingQty, total, item_id
+function updateStockAndSale(item_id,remainingQty, total) {
+    connection.query('UPDATE products,departments SET stock_quantity = ? , products_sale = products_sale + ? , departments.total_sales = departments.total_sales + ? WHERE products.department_name = departments.department_name and item_id = ? ', [
+        remainingQty, total, total, item_id
     ], function(err, results, fields) {
         if (err) {
             throw err;
