@@ -41,14 +41,10 @@ Completed three levels in the assignment.
    * This means updating the SQL database to reflect the remaining quantity.
    * Once the update goes through, show the customer the total cost of their purchase.
 
-- - -
-
-* If this activity took you between 8-10 hours, then you've put enough time into this assignment. Feel free to stop here -- unless you want to take on the next challenge.
-
-- - -
 
 ### Challenge #2: Manager View (Next Level)
-[Watch the Video!](https://youtu.be/8aw26Tt1sMM)
+[Watch the Video!](https://youtu.be/h8wW_S_wyIs)
+
 
 * Create a new Node application called `bamazonManager.js`. Running this application will:
 
@@ -75,7 +71,7 @@ Completed three levels in the assignment.
 
 ### Challenge #3: Supervisor View (Final Level)
 
-[Watch the Video!](https://youtu.be/h8wW_S_wyIs)
+[Watch the Video!](https://youtu.be/8aw26Tt1sMM)
 
 1. Create a new MySQL table called `departments`. Your table should include the following columns:
 
@@ -109,5 +105,3 @@ Completed three levels in the assignment.
 6. The `total_profit` should be calculated on the fly using the difference between `over_head_costs` and `total_sales`. `total_profit` should not be stored in any database. You should use a custom alias.
 
 7. If you can't get the table to display properly after a few hours, then feel free to go back and just add `total_profit` to the `departments` table.
-
- 
