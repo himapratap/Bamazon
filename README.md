@@ -1,12 +1,8 @@
-# Bamazon
+# BAMAZON !!
 Simple inventory App [mysql and node].
 Completed three levels in the assignment.
-
-*
 ================================================
 
-
-####  BamazonCustomer:
 
 ### Challenge #1: Customer View (Minimum Requirement)
 
@@ -114,13 +110,4 @@ Completed three levels in the assignment.
 
 7. If you can't get the table to display properly after a few hours, then feel free to go back and just add `total_profit` to the `departments` table.
 
-
-#### Lesson 1.3 ~ Positioning in CSS
-
-Learn about the positioning property in CSS.
-[Watch the Video!](https://www.youtube.com/watch?v=sHfJn0jqBro)
-
-#### Lesson 1.3 ~ CSS Positioning Layout
-
-Learn to use positioning in a website layout.
-[Watch the Video!](https://www.youtube.com/watch?v=yWXgnQaWSW0)
+ 
